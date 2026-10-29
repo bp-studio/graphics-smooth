@@ -6,10 +6,12 @@ import { SmoothBatcher, SmoothTexturedBatcher } from './shared/batcher/SmoothBat
 import { SmoothGraphicsContextSystem } from './shared/SmoothGraphicsContextSystem';
 import { SmoothGraphicsPipe } from './shared/SmoothGraphicsPipe';
 
-extensions.add(SmoothGraphicsPipe);
-extensions.add(CanvasSmoothGraphicsPipe);
-extensions.add(SmoothGraphicsContextSystem);
-extensions.add(GlSmoothGraphicsAdaptor);
-extensions.add(GpuSmoothGraphicsAdaptor);
-extensions.add(SmoothBatcher);
-extensions.add(SmoothTexturedBatcher);
+extensions.add(
+    SmoothGraphicsPipe,
+    CanvasSmoothGraphicsPipe,
+    SmoothGraphicsContextSystem,
+    GlSmoothGraphicsAdaptor,
+    GpuSmoothGraphicsAdaptor,
+    SmoothBatcher,
+    SmoothTexturedBatcher
+);
